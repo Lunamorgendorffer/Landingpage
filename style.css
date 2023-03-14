@@ -473,4 +473,211 @@ header nav ul {
     font-weight: bold;
 }
 
+/******************Seventh section******************/
+
+.pricing{
+    background: #DCDCDC;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pricing h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pricing p {
+    margin-top: 15px;
+    width: 65%;
+    text-align: center;
+    color: grey;
+}
+
+.colContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 21px;
+
+}
+.col{
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+
+}
+
+
+.label{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.priceTag{
+    text-align: center;
+}
+
+
+.symbol{
+    font-size: 34px;
+    color: rgb(65, 124, 233);
+    position:relative;
+    top:-36px;
+}
+
+.amount{
+    font-size: 84px;
+    color: rgb(65, 124, 233);
+}
+
+.time {
+    color: grey;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.pricingFeatures{
+    margin-top: 20px;
+}
+
+.feature{
+    font-size: 17px;
+    margin: 15px 40px;
+}
+
+.feature span{
+    display: inline-block;
+    float: right;
+}
+
+.feature i{
+    padding-right: 5px;
+}
+
+
+.priceButton{
+    border: 2px solid rgb(65, 124, 233) ;
+    color: white;
+    background-color:rgb(65, 124, 233);
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+	padding: 10px;
+    margin: 30px 40px;
+}
+
+.advanced{
+    position: relative;
+}
+
+
+.advanced .sale{
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    border: 2px solid rgb(57, 106, 197) ;
+    background-color:rgb(57, 106, 197) ;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 70px;
+    height: 70px;
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col:hover{
+    transform: translateY(-30px);
+    transition: all .5s ease-in-out;
+}
+
+/***********Footer*************/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #26272B;
+    width: 100%;
+    height: 200px;
+}
+
+.fa-icon {
+    display: flex;
+    width: max-content;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    border: 2px solid #5F6064;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 02s linear;
+}
+
+.icon i {
+    color: #5F6064;
+    transition: 02s linear;
+}
+.icon:hover {
+    transition: 02s linear;
+    background-color: rgb(57, 106, 197);
+}
+
+.icon:hover i {
+    color: white;
+}
+
+.condition {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.intem {
+    margin: 0 20px;
+    color: #fff;
+}
+
+.condition a {
+    text-decoration: none;
+    color: #5F6064;
+    transition: 02s linear;
+}
+
+.condition a:hover {
+    transition: 02s linear;
+    color: black;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #5F6064;
+}
+  
+
+ 
+  
+  
+  
+
 
