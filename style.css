@@ -217,17 +217,43 @@ header nav ul {
     color: grey;
 }
 
-.work-desc{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    margin: 20px 0 0 0;
-    padding: 0px 60px;
+.work-content{
+    padding: 8vh 0 8vh 10vw;
 }
 
-.work-desc img{
-    width: 35%;
+.work-desc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+
 }
+
+.work-image1{
+    width: 29vw;
+    height: 32vh;
+    background-image: url(./img/Work1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.work-image2 {
+    width: 33vw;
+    height: 32vh;
+    background-image: url(./img/Work2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.work-image3 {
+    width: 29vw;
+    height: 32vh;
+    background-image: url(./img/Work3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+ 
+
+
 
 .dot{
     width: 18px;
@@ -241,6 +267,7 @@ header nav ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 50%;
    
 }
 
@@ -436,7 +463,7 @@ header nav ul {
     font-weight: 500;
 }
 
-/***********************Six section**************************/
+/***********************Sixth section**************************/
 
 .blogs {
     min-height: 100vh;
@@ -525,7 +552,8 @@ header nav ul {
 }
 
 .articles a:hover {
-    background-color: black;
+    text-decoration: underline;
+    
 }
 
 
