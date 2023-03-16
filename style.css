@@ -45,18 +45,20 @@ header nav ul {
 .nav-item {
     font-weight: 600;
     margin: 0 10px;
+    transition: 02s linear;
 }
 
 .nav-link {
     text-decoration: none;
     color: white;
-    transition: 0.3s ease;
+    
 }
   
-.nav-link:hover {
-    transition: 0.3s ease;
-    background-color: black;
-    
+.nav-item:hover {
+    transition: 02s linear;
+    transform: scale(1.1);
+    text-decoration: underline;
+
 }
 
 .icons{
