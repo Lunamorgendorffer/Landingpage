@@ -5,9 +5,12 @@
     list-style: none;
     font-family: "Poppins", sans-serif;
 }
-  
+
+html {
+    scroll-behavior: smooth;
+}
  
-/**Premières sections**/
+/******************First sections*********************/
 header {
     background: radial-gradient(rgb(139, 195, 245), #1294b8);
     min-height: 100vh;
@@ -45,20 +48,28 @@ header nav ul {
 .nav-link {
     text-decoration: none;
     color: white;
+    transition: 0.3s ease;
 }
   
 .nav-link:hover {
-    transition: 0.7s ease;
-    color:dodgerblue;
+    transition: 0.3s ease;
+    background-color: black;
+    
 }
 
 .icons a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-    transition: 0.7s ease;
+    transition: 0.3s ease;
     font-size: 1.2rem;
 }
+
+.icons a:hover {
+    transition: 0.3s ease;
+    color: black;
+}
+
 
 .section1 {
     display: flex;
@@ -184,7 +195,7 @@ header nav ul {
 /**********************third section*******************************/
 .work{
     background: #DCDCDC;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,6 +204,7 @@ header nav ul {
 }
 
 .work h2 {
+    margin-top: 30px;
     font-weight: 600;
     font-size: 2rem;
     text-align: center;
@@ -205,8 +217,47 @@ header nav ul {
     color: grey;
 }
 
+.work-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px 0 0 0;
+    padding: 0px 60px;
+}
 
-/**fourth section**/
+.work-desc img{
+    width: 35%;
+}
+
+.dot{
+    width: 18px;
+    height: 11px;
+    background-color: #1081a0cd;
+    border-radius: 80%;
+    margin-right: 15px;
+}
+
+.illustration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+
+.illustration p {
+    width: 70%;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.titre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/***************************fourth section****************************************/
 .teams {
     display: flex;
     flex-direction: column;
@@ -450,11 +501,11 @@ header nav ul {
 
 .content:hover {
     background-color: rgba(0, 0, 0, 0.6);
-    transition: 04s ease-in-out;
+    transition: 02s ease-in-out;
 }
 
 .content:hover .onImage {
-    transition: 04s ease-in-out;
+    transition: 02s ease-in-out;
     opacity: 1;
 }
 .articles h4 {
@@ -472,6 +523,11 @@ header nav ul {
     color: #0d7794;
     font-weight: bold;
 }
+
+.articles a:hover {
+    background-color: black;
+}
+
 
 /******************Seventh section******************/
 
@@ -491,10 +547,9 @@ header nav ul {
     text-align: center;
 }
 
-.pricing p {
-    margin-top: 15px;
+.pricing-p{
+    padding: 30px;
     width: 65%;
-    text-align: center;
     color: grey;
 }
 
@@ -553,10 +608,10 @@ header nav ul {
 .feature{
     font-size: 17px;
     margin: 15px 40px;
+    text-align: left;
 }
 
 .feature span{
-    display: inline-block;
     float: right;
 }
 
@@ -616,12 +671,12 @@ footer {
     height: 200px;
 }
 
-.fa-icon {
+.fa-ikon {
     display: flex;
     width: max-content;
 }
 
-.icon {
+.ikons {
     width: 40px;
     height: 40px;
     margin: 0 20px;
@@ -634,16 +689,16 @@ footer {
     transition: 02s linear;
 }
 
-.icon i {
+.ikons i {
     color: #5F6064;
     transition: 02s linear;
 }
-.icon:hover {
+.ikons:hover {
     transition: 02s linear;
     background-color: rgb(57, 106, 197);
 }
 
-.icon:hover i {
+.ikons:hover i {
     color: white;
 }
 
@@ -661,22 +716,37 @@ footer {
 .condition a {
     text-decoration: none;
     color: #5F6064;
-    transition: 02s linear;
 }
 
 .condition a:hover {
-    transition: 02s linear;
-    color: black;
+    
+    color:  rgb(57, 106, 197);
 }
 
 .copyright {
     margin-top: 20px;
     color: #5F6064;
 }
-  
 
- 
-  
+/********************************SECTION SCROLL UP *******************************************/
+
+.scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right:30px;
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+
+.scrollTop:hover{
+    background-color: #f7f7f7;
+    color: #000;
+}
   
   
 
