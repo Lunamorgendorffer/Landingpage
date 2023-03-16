@@ -25,13 +25,6 @@ header {
 
 }
 
-/* .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-} */
 
 .burger-menu {
     display: none;
@@ -140,10 +133,15 @@ header nav ul {
     background-color:dodgerblue;
 }
 
-.section1 figure {
-    margin-left: 5vw;
+.home-image{
+    background-image: url(./illustration.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 50%;
+    height: 60vh;
+    margin-left: 5vw;
 }
+
 
 /*************Second section**********************/
 .features {
