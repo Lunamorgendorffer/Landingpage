@@ -16,13 +16,22 @@ header {
     min-height: 100vh;
 }
 
-.navbar {
+.header-home{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+
 }
+
+/* .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+} */
 
 .burger-menu {
     display: none;
@@ -55,6 +64,11 @@ header nav ul {
     transition: 0.3s ease;
     background-color: black;
     
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
 }
 
 .icons a {
