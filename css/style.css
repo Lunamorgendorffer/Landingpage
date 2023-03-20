@@ -136,12 +136,13 @@ header nav ul {
 }
 
 .home-image{
-    background-image: url(./illustration.svg);
+    background-image: url("../illustration.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 50%;
     height: 60vh;
     margin-left: 5vw;
+
 }
 
 
@@ -245,7 +246,7 @@ header nav ul {
 .work-image1{
     width: 29vw;
     height: 32vh;
-    background-image: url(./img/Work1.png);
+    background-image: url("../img/Work1.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -253,7 +254,7 @@ header nav ul {
 .work-image2 {
     width: 33vw;
     height: 32vh;
-    background-image: url(./img/Work2.png);
+    background-image: url("../img/Work2.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -261,7 +262,7 @@ header nav ul {
 .work-image3 {
     width: 29vw;
     height: 32vh;
-    background-image: url(./img/Work3.png);
+    background-image: url("../img/Work3.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -417,7 +418,7 @@ header nav ul {
 
 /****************fifth section*************************/
 .parallax {
-    background-image: url(./img/parallax.png);
+    background-image: url("C:/Users/noura/OneDrive/Bureau/Landing-page/img/parallax.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -962,16 +963,13 @@ footer {
 
 /****************************************SMARTPHONE************************/
 @media screen and (max-width: 760px) {
-    body {
-        width: 100%;
-    }
 
     .colorpanel{
         display: none;
     }
 
     #home{
-        width: 223vw;
+        width: 100%;
     }
 
     .logo a {
@@ -1062,22 +1060,21 @@ footer {
     .home-image{
         display: none;
     }
-
+    /* Second section */
     .features{
-        padding: 20px;
+        padding: 10px;
         width: 100%;
     }
 
     .subhead{
         width: auto;
-        text-align: center;
+        font-size: 1.25em;
     }
 
     .cards{
-        display: flex ;
         flex-direction: column;
-        margin: 0;
-        margin-top: 20px;
+        width: 80%;
+        gap: 25px;
     }
 
     .card{
@@ -1085,6 +1082,184 @@ footer {
         padding: 10px;
         margin: 0;
         margin-top: 20px;
+    }
+
+    .card:hover {
+        transition: none;
+        transform: none;
+    }
+    /* Third section */
+
+    .work{
+        padding: 10px;
+        width: 100%;
+    }
+    .work .subhead{
+        width: auto;
+    }
+
+    .work-image1 {
+        width: 100%;
+        position: relative;
+        left: 58px;
+    }
+
+    .work-desc{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .illustration{
+        width: 100vw;
+        padding: 39px;
+        margin: 30px;
+    }
+
+    .illustration p{
+        width: 83%;
+    }
+
+    .work-image2 {
+        width: 100%;
+        position: relative;
+        left: 58px;
+    }
+
+    .work-image3 {
+        width: 100%;
+        position: relative;
+        left: 58px;
+    }
+
+    /* Fourth section */
+    .teams{
+        padding: 10px;
+        width: 100%;
+    }
+    .teams h2{
+        width: auto;
+    }
+    .teams .header-desc{
+        width: auto;
+    }
+    .employee{
+        flex-direction: column;
+    }
+
+    .person {
+    margin-top: 50px;
+    }
+
+    .about {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .img {
+        display: flex;
+        overflow: auto;
+        border-radius: unset;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .img img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        filter: grayscale(1);
+    }
+
+    .socials {
+        opacity: 1;
+        z-index: 1;
+        position: relative;
+        flex-direction: row;
+    }
+    .socials a {
+        border-radius: 50%;
+        margin: 20px 5px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+    .socials a:hover {
+        transition:none;
+    }
+    
+    .img:hover .socials {
+        transition: none;
+        transform: none;
+    }
+    
+    .img img:hover {
+        transition: none;
+        transform: none;
+
+    }
+
+    /* Fifth section */*
+    .parallax {
+        width: auto;
+        height: auto;
+        padding: 20px;
+        background-size: cover;
+        background-attachment: unset;
+    }
+    
+    .parallax p {
+    width: 100%;
+    text-align: justify;
+    }
+
+    /* Sixth section */
+    .blogs {
+    padding: 10px;
+    }
+
+    .blogs p {
+    width: 100%;
+    }
+
+    .blog {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 50px;
+    }
+
+    /* Seventh section */
+
+    .pricing {
+    padding: 10px;
+    }
+
+    .pricing-p {
+    width: 100%;
+    }
+
+    .colContainer {
+    flex-direction: column;
+    }
+
+    .col {
+        transition: none;
+        width: 324px;
+        height: 450px;
+        margin-top: 20px;
+    }
+
+    .col:hover{
+        transform: none;
+        transition: none;
+    }
+
+    /**Footer**/
+
+    footer {
+        height: auto;
+        padding: 20px;
     }
 
     
