@@ -28,6 +28,18 @@ header {
 
 .burger-menu {
     display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:#fff;
+    color: blueviolet;
 }
 
 .logo a {
@@ -961,8 +973,13 @@ footer {
     border-radius: 6px;
 }
 
+
 /****************************************SMARTPHONE************************/
 @media screen and (max-width: 760px) {
+
+    .body{
+        width: 100%;
+    }
 
     .colorpanel{
         display: none;
@@ -973,70 +990,42 @@ footer {
     }
 
     .logo a {
-        font-size: 2.5em;
-    }
-
-    .nav-menu{
-        z-index: 5;
-        min-width: 100%;
-        min-height: 100%;
-        position: fixed;
-        top: 0;
-        height: 0;
-        visibility: hidden;
-        opacity: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .icons{
-        display: none;
+        font-size: 20px;
     }
 
     .burger-menu {
         display: block;
-        cursor: pointer;
-        height: 27px;
-        width: 27px;
-        overflow: visible;
-        position: relative;
-        z-index: 10;
-    }
-    /* THE LINES */
-    .burger-menu span,span:before, span:after {
-        background: #fff;
-        display: block;
-        height: 2px;
-        opacity: 1;
-        position: absolute;
-        transition: 0.3s ease-in-out;
+        
     }
 
-    .burger-menu span:before, span:after {
-        content: '';
+    .burger-menu.active span:nth-child(2){
+        opacity: 0;
+    }
+    .burger-menu.active span:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .burger-menu.active span:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
 
-        /* TOP */
-    .burger-menu span:before {
-        left: 0px;
-        top: -10px;
-        width: 27px;
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #87d9f0;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
     }
 
-        /* MIDDLE */
-    .burger-menu span {
-        right: 0px;
-        top: 13px;
-        width: 27px;
+    .nav-item{
+        margin: 16px 0;
     }
+    .nav-menu.active{
+        left:-37px;
 
-        /* BOTTOM */
-    .burger-menu span:after {
-        left: 0px;
-        top: 10px;
-        width: 27px;
     }
 
     .section1 {
@@ -1262,7 +1251,9 @@ footer {
         padding: 20px;
     }
 
-    
+    .scrollTop{
+        right:30vw;
+    }
 
 
         
